@@ -70,14 +70,7 @@ class AdminModel(UserModel):
 
     def _init_(self, username: str, email: str, code: int, first_name: str, last_name: str,
                password: str, description: str, picture: str):
-        self.username = username
-        self.email = email
-        self.code = code
-        self.first_name = first_name
-        self.last_name = last_name
-        self.password = password
-        self.description = description
-        self.picture = picture
+
 
     def json(self):
         return {'first_name': self.first_name, 'last_name': self.last_name,
@@ -109,15 +102,6 @@ class ProfessorModel(UserModel):
 
     def _init_(self, username: str, email: str, code: int, first_name: str, last_name: str,
                password: str, description: str, picture: str):
-        self.username = username
-        self.email = email
-        self.code = code
-        self.first_name = first_name
-        self.last_name = last_name
-        self.password = password
-        self.description = description
-        self.picture = picture
-
 
 
     def json(self):
