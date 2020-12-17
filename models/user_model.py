@@ -145,13 +145,7 @@ class StudentModel(UserModel):
     def __init__(self, username: str, email: str, code: int, first_name: str, last_name: str,
                  password: str, description: str, picture: str, semester: int):
         self.username = username
-        self.email = email
-        self.code = code
-        self.first_name = first_name
-        self.last_name = last_name
-        self.password = password
-        self.description = description
-        self.picture = picture
+
         self.semester = semester
 
     def json(self):
